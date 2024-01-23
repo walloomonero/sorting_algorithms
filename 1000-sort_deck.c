@@ -12,7 +12,7 @@ void insertion_sort_deck_value(deck_node_t **deck);
  * @s2: The second string to be compared.
  *
  * Returns: Positive byte difference if s1 > s2, 0 if s1 == s2 and
- * negative byte difference if s1 < s2 
+ * negative byte difference if s1 < s2
  */
 int _strcmp(const char *s1, const char *s2)
 {
