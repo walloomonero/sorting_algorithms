@@ -27,8 +27,7 @@ void swap_ints(int *a, int *b)
  * @left: Starting index of the subset to order.
  * @right: Ending index of the subset to order.
  *
- * Returns: 
- * The index of the pivot after partitioning.
+ * Returns: The index of the pivot after partitioning.
  */
 int lomuto_partition(int *array, size_t size, int left, int right)
 {
