@@ -4,12 +4,12 @@
  * get_max - To get the maximum value in an array of integers.
  * @array: An array of integers.
  * @size: Size of the array.
- *
+ * @maxi: Maximum interger
  * Returns: Maximum integer in the array.
  */
 int get_max(int *array, int size)
 {
-	int maxi, ;n
+	int maxi, ; n
 
 	for (maxi = array[0], n = 1; n < size; n++)
 	{

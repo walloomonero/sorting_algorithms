@@ -3,7 +3,8 @@
 void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
 void bitonic_sort(int *array, size_t size);
 void swap_ints(int *a, int *b);
-void bitonic_merge(int *array, size_t size, size_t start, size_t seq,char flow);
+void bitonic_merge(int *array, size_t size,
+size_t start, size_t seq, char flow);
 
 /**
  * swap_ints - To swap two integers in an array.
@@ -53,7 +54,8 @@ void bitonic_merge(int *array, size_t size, size_t start, size_t seque,
  * @seque: The size of a block of the building bitonic sequence.
  * @flow: The direction to sort the bitonic sequence block in.
  */
-void bitonic_seq(int *array, size_t size, size_t start, size_t seque, char flow)
+void bitonic_seq(int *array, size_t size, size_t start,
+size_t seque, char flow)
 {
 	size_t cut = seque / 2;
 	char *str = (flow == UP) ? "UP" : "DOWN";
@@ -78,7 +80,7 @@ void bitonic_seq(int *array, size_t size, size_t start, size_t seque, char flow)
  * @array: An array of integers.
  * @size: Size of the array.
  *
- * Description: To print the array after each swap. 
+ * Description: To print the array after each swap.
  * Only works for size = 2^k where k >= 0 (ie. size equal to powers of 2).
  */
 void bitonic_sort(int *array, size_t size)

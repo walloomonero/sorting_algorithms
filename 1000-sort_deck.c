@@ -7,13 +7,12 @@ void insertion_sort_deck_kind(deck_node_t **deck);
 void insertion_sort_deck_value(deck_node_t **deck);
 
 /**
- * _strcmp - To compares two strings.
+ * _strcmp - To compare two strings.
  * @s1: The first string to be compared.
  * @s2: The second string to be compared.
  *
- * Returns: Positive byte difference if s1 > s2
- *          0 if s1 == s2
- *          Negative byte difference if s1 < s2
+ * Returns: Positive byte difference if s1 > s2, 0 if s1 == s2 and
+ * negative byte difference if s1 < s2 
  */
 int _strcmp(const char *s1, const char *s2)
 {
@@ -32,7 +31,7 @@ int _strcmp(const char *s1, const char *s2)
  * get_value - To get the numerical value of a card.
  * @card: A pointer to a deck_node_t card.
  *
- * Returns: The numerical value of the card.
+ * Returns: An integer, the numerical value of the card.
  */
 char get_value(deck_node_t *card)
 {

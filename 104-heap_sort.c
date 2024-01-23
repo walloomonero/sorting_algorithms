@@ -53,7 +53,7 @@ void max_heapify(int *array, size_t size, size_t base, size_t root)
  * @size: Size of the array.
  *
  * Description: To implement the sift-down heap sort algorithm.
- * 				To Print the array after each swap.
+ * 		To Print the array after each swap.
  */
 void heap_sort(int *array, size_t size)
 {

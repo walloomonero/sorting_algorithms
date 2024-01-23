@@ -1,7 +1,7 @@
 #include "sort.h"
 
 void merge_sort(int *array, size_t size);
-void merge_subar(int *subar, int *buf, size_t fron, size_t mid,size_t bac);
+void merge_subar(int *subar, int *buf, size_t fron, size_t mid, size_t bac);
 void merge_sort_recursive(int *subar, int *buf, size_t fron, size_t bac);
 
 /**
@@ -37,7 +37,8 @@ void merge_subar(int *subar, int *buf, size_t fron, size_t mid,
 }
 
 /**
- * merge_sort_recursive - To implement the merge sort algorithm through recursion.
+ * merge_sort_recursive - To implement the merge sort algorithm
+ *through recursion.
  * @subar: A subarray of an array of integers to sort.
  * @buf: A buffer to store the sorted result.
  * @fron: The front index of the subarray.

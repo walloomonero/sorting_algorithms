@@ -8,7 +8,7 @@ void radix_counting_sort(int *array, size_t size, int sig, int *buff);
  * get_max - To get the maximum value in an array of integers.
  * @array: An array of integers.
  * @size: Size of the array.
- *
+ * @maxi: Maximum integer
  * Returns: The maximum integer in the array.
  */
 int get_max(int *array, int size)
@@ -60,7 +60,7 @@ void radix_counting_sort(int *array, size_t size, int signf, int *buf)
  * @size: Size of the array.
  *
  * Description: To implement the LSD radix sort algorithm.
- *				To print the array after each significant digit increase.
+ *		To print the array after each significant digit increase.
  */
 void radix_sort(int *array, size_t size)
 {
