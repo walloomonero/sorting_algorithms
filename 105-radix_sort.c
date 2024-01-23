@@ -17,7 +17,7 @@ int get_max(int *array, int size)
 
 	for (maxi = array[0], n = 1; n < size; n++)
 	{
-		if (array[i] > maxi)
+		if (array[n] > maxi)
 			maxi = array[n];
 	}
 
@@ -37,7 +37,7 @@ void radix_counting_sort(int *array, size_t size, int signf, int *buf)
 	int count[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	size_t n;
 
-	for (n = 0; i < size; n++)
+	for (n = 0; n < size; n++)
 		count[(array[n] / signf) % 10] += 1;
 
 	for (n = 0; n < 10; n++)
@@ -50,7 +50,7 @@ void radix_counting_sort(int *array, size_t size, int signf, int *buf)
 	}
 
 	for (n = 0; n < size; n++)
-		array[n] = buff[n];
+		array[n] = buf[n];
 }
 
 /**

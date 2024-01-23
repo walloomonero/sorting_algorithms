@@ -9,7 +9,7 @@
  */
 int get_max(int *array, int size)
 {
-	int maxi, ; n
+	int maxi, n;
 
 	for (maxi = array[0], n = 1; n < size; n++)
 	{
@@ -46,7 +46,7 @@ void counting_sort(int *array, size_t size)
 		return;
 	}
 
-	for (n = 0; n < (max + 1); n++)
+	for (n = 0; n < (maxi + 1); n++)
 		count[n] = 0;
 	for (n = 0; n < (int)size; n++)
 		count[array[n]] += 1;
